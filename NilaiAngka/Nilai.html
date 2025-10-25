@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Nilai - KeyCraze</title>
+    <link rel="stylesheet" href="nilai.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="dark-theme">
+    <div class="register-container">
+        <div class="register-card">
+            <!-- Left Side - Illustration -->
+            <div class="card-left">
+                <div class="illustration">
+                    <div class="ill-icon">🔑</div>
+                    <h2>Join KeyCraze Community!</h2>
+                    <p>Dapatkan akses eksklusif ke produk terbaru dan diskon spesial untuk member.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class='bx bx-check'></i>
+                            <span>Early access produk baru</span>
+                        </div>
+                        <div class="feature">
+                            <i class='bx bx-check'></i>
+                            <span>Diskon member hingga 30%</span>
+                        </div>
+                        <div class="feature">
+                            <i class='bx bx-check'></i>
+                            <span>Points reward system</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Form -->
+            <div class="card-right">
+                <div class="form-header">
+                    <h1>Buat Akun</h1>
+                    <p>Sudah punya akun? <a href="#" class="login-link">Masuk di sini</a></p>
+                </div>
+
+                <!-- Social Login -->
+                <div class="social-login">
+                    <button class="social-btn google">
+                        <i class='bx bxl-google'></i>
+                        Continue with Google
+                    </button>
+                    <button class="social-btn facebook">
+                        <i class='bx bxl-facebook'></i>
+                        Continue with Facebook
+                    </button>
+                </div>
+
+                <div class="divider">
+                    <span>atau daftar dengan email</span>
+                </div>
+
+                <form id="registrationForm" class="dark-form">
+                    <!-- Nama Depan & Belakang -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <i class='bx bx-user'></i>
+                            <input type="text" id="firstName" name="firstName" placeholder=" " required>
+                            <label for="firstName">Nama Depan</label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <i class='bx bx-user'></i>
+                            <input type="text" id="lastName" name="lastName" placeholder=" " required>
+                            <label for="lastName">Nama Belakang</label>
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <i class='bx bx-envelope'></i>
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Alamat Email</label>
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <i class='bx bx-lock-alt'></i>
+                        <input type="password" id="password" name="password" placeholder=" " required>
+                        <label for="password">Password</label>
+                        <button type="button" class="toggle-password">
+                            <i class='bx bx-hide'></i>
+                        </button>
+                    </div>
+
+                    <!-- Password Strength -->
+                    <div class="password-strength">
+                        <div class="strength-bar">
+                            <div class="strength-fill" id="strengthFill"></div>
+                        </div>
+                        <span class="strength-text" id="strengthText">Weak</span>
+                    </div>
+
+                    <!-- Confirm Password -->
+                    <div class="form-group">
+                        <i class='bx bx-lock'></i>
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder=" " required>
+                        <label for="confirmPassword">Konfirmasi Password</label>
+                    </div>
+
+                    <!-- Username -->
+                    <div class="form-group">
+                        <i class='bx bx-at'></i>
+                        <input type="text" id="username" name="username" placeholder=" " required>
+                        <label for="username">Username</label>
+                        <span class="username-available" id="usernameStatus"></span>
+                    </div>
+
+                    <!-- Phone Number -->
+                    <div class="form-group">
+                        <i class='bx bx-phone'></i>
+                        <input type="tel" id="phone" name="phone" placeholder=" " required>
+                        <label for="phone">Nomor Telepon</label>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="form-group">
+                        <i class='bx bx-user-circle'></i>
+                        <select id="gender" name="gender" required>
+                            <option value=""></option>
+                            <option value="male">Laki-laki</option>
+                            <option value="female">Perempuan</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+                        <label for="gender">Jenis Kelamin</label>
+                    </div>
+
+                    <!-- SECTION BARU: Nilai Angka Untuk Kepuasan Pelanggan -->
+                    <div class="rating-section">
+                        <h3 class="section-title">
+                            <i class='bx bx-star'></i>
+                            Nilai Angka Untuk Kepuasan Pelanggan
+                        </h3>
+                        <div class="number-rating">
+                            <div class="number-option">
+                                <input type="radio" id="rating1" name="customerRating" value="1">
+                                <label for="rating1">1</label>
+                            </div>
+                            <div class="number-option">
+                                <input type="radio" id="rating2" name="customerRating" value="2">
+                                <label for="rating2">2</label>
+                            </div>
+                            <div class="number-option">
+                                <input type="radio" id="rating3" name="customerRating" value="3">
+                                <label for="rating3">3</label>
+                            </div>
+                            <div class="number-option">
+                                <input type="radio" id="rating4" name="customerRating" value="4">
+                                <label for="rating4">4</label>
+                            </div>
+                            <div class="number-option">
+                                <input type="radio" id="rating5" name="customerRating" value="5">
+                                <label for="rating5">5</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SECTION BARU: Nilai Huruf Untuk Penilaian Produk -->
+                    <div class="rating-section">
+                        <h3 class="section-title">
+                            <i class='bx bx-award'></i>
+                            Nilai Huruf Untuk Penilaian Produk
+                        </h3>
+                        <div class="letter-rating">
+                            <div class="letter-option">
+                                <input type="radio" id="gradeA" name="productGrade" value="A">
+                                <label for="gradeA">A</label>
+                            </div>
+                            <div class="letter-option">
+                                <input type="radio" id="gradeB" name="productGrade" value="B">
+                                <label for="gradeB">B</label>
+                            </div>
+                            <div class="letter-option">
+                                <input type="radio" id="gradeC" name="productGrade" value="C">
+                                <label for="gradeC">C</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Terms & Conditions -->
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                        <label for="agreeTerms">
+                            Saya menyetujui <a href="#">Syarat & Ketentuan</a> dan <a href="#">Kebijakan Privasi</a>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter" checked>
+                        <label for="newsletter">
+                            Kirimi saya update produk terbaru dan penawaran spesial
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="cta-button submit-btn">
+                        <span class="btn-text">Buat Akun</span>
+                        <div class="btn-loading">
+                            <div class="spinner"></div>
+                        </div>
+                    </button>
+                </form>
+
+                <!-- Success Message dengan Result -->
+                <div id="successMessage" class="success-message">
+                    <div class="success-icon">
+                        <i class='bx bx-check-circle'></i>
+                    </div>
+                    <h2>Pendaftaran Berhasil!</h2>
+                    
+                    <!-- Result/Rekap Data User -->
+                    <div class="user-summary">
+                        <h3>Data Akun Anda:</h3>
+                        <div class="summary-item">
+                            <strong>Nama Lengkap:</strong>
+                            <span id="summary-fullname">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>Username:</strong>
+                            <span id="summary-username">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>Email:</strong>
+                            <span id="summary-email">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>Telepon:</strong>
+                            <span id="summary-phone">-</span>
+                        </div>
+                        <!-- Data Section Baru -->
+                        <div class="summary-item">
+                            <strong>Rating Kepuasan:</strong>
+                            <span id="summary-rating">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <strong>Grade Produk:</strong>
+                            <span id="summary-grade">-</span>
+                        </div>
+                    </div>
+
+                    <!-- Tombol Lanjut Order -->
+                    <div class="action-buttons">
+                        <button class="cta-button continue-order-btn" onclick="continueOrder()">
+                            Lanjut Order? 🛒
+                        </button>
+                        <button class="cta-button secondary-btn" onclick="resetForm()">
+                            Buat Akun Baru
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="nilai.js"></script>
+</body>
+</html>
