@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie Paradise - Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="restaurant-name">🍕 Foodie Paradise</h1>
+            <p class="tagline">Rasa yang Menggugah Selera</p>
+        </header>
+
+        <!-- Menu Container -->
+        <div class="menu-container">
+            <div class="menu-slider" id="menuSlider">
+                <!-- Menu Item 1 -->
+                <div class="menu-item">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Burger Special">
+                    </div>
+                    <div class="food-info">
+                        <h3 class="food-name">Burger Special</h3>
+                        <p class="food-desc">Burger premium dengan daging sapi pilihan, keju melt, sayuran segar, dan sauce spesial racikan chef.</p>
+                        <div class="price-order">
+                            <span class="price">Rp 45.000</span>
+                            <button class="order-btn">
+                                <i class='bx bx-cart'></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 2 -->
+                <div class="menu-item">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pizza Margherita">
+                    </div>
+                    <div class="food-info">
+                        <h3 class="food-name">Pizza Margherita</h3>
+                        <p class="food-desc">Pizza authentic Italia dengan tomat segar, mozzarella, basil, dan olive oil di atas dough handmade.</p>
+                        <div class="price-order">
+                            <span class="price">Rp 85.000</span>
+                            <button class="order-btn">
+                                <i class='bx bx-cart'></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 3 -->
+                <div class="menu-item">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pasta Carbonara">
+                    </div>
+                    <div class="food-info">
+                        <h3 class="food-name">Pasta Carbonara</h3>
+                        <p class="food-desc">Pasta spaghetti dengan sauce carbonara creamy, smoked beef, parmesan cheese, dan black pepper.</p>
+                        <div class="price-order">
+                            <span class="price">Rp 65.000</span>
+                            <button class="order-btn">
+                                <i class='bx bx-cart'></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 4 -->
+                <div class="menu-item">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Pancake Berry">
+                    </div>
+                    <div class="food-info">
+                        <h3 class="food-name">Pancake Berry</h3>
+                        <p class="food-desc">Pancake fluffy dengan mixed berries, maple syrup, whipped cream, dan es krim vanilla.</p>
+                        <div class="price-order">
+                            <span class="price">Rp 35.000</span>
+                            <button class="order-btn">
+                                <i class='bx bx-cart'></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu Item 5 -->
+                <div class="menu-item">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Salad Bowl">
+                    </div>
+                    <div class="food-info">
+                        <h3 class="food-name">Salad Bowl</h3>
+                        <p class="food-desc">Mix greens segar dengan avocado, cherry tomato, chicken grilled, dan special dressing.</p>
+                        <div class="price-order">
+                            <span class="price">Rp 40.000</span>
+                            <button class="order-btn">
+                                <i class='bx bx-cart'></i> Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="nav-btn prev-btn" onclick="slideMenu(-1)">
+                <i class='bx bx-chevron-left'></i>
+            </button>
+            <button class="nav-btn next-btn" onclick="slideMenu(1)">
+                <i class='bx bx-chevron-right'></i>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Foodie Paradise. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+</html>
